@@ -80,13 +80,14 @@ require('config.php') ;
                   <li class="nav-item">
                    
                     <!-- <a class="nav-link active" id="logOut-nav" aria-current="page" href="#">  -->
-                    <li class="nav-item m-2">
+                    <li class="nav-item mt-2">
                     <a  href="profile.php"  aria-current="page" >
                       <?php echo $_SESSION['user']['name']; ?>
+                      <img src="<?php if(isset($_SESSION['user']['pactuer'])){ echo $_SESSION['user']['pactuer'];}?>" style="width:40px ;height:40px;border-radius:30px" >
                     </a>
                   </li>
                     
-                      <a  href="logout.php" class="btn btn-dark" name="submit" >logOut</a></i></a>
+                      <a  href="logout.php" class="btn btn-dark" name="submit"   onclick="return confirm('Are you sure to sign out ?')">logOut</a></i></a>
 
                   </li>
                  <?php }?>

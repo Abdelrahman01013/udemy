@@ -43,7 +43,7 @@ if(!empty($_FILES['img']['name'])){
  $update=mysqli_query($conn,"UPDATE  users SET name='$name' ,pactuer='$new_location' WHERE email='$email'") ;
 
  if($update){
-    $_SESSION['user']=['name'=>$name ,'email'=>$email] ;
+    $_SESSION['user']=['name'=>$name ,'email'=>$email ,'pactuer'=>$new_location] ;
     header("location:profile.php");
 }
 } 

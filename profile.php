@@ -89,13 +89,14 @@ h1{margin-top:50px}
                   <li class="nav-item">
                    
                     <!-- <a class="nav-link active" id="logOut-nav" aria-current="page" href="#">  -->
-                    <li class="nav-item m-2">
+                    <li class="nav-item mt-2">
                     <a  href="profile.php"  aria-current="page" >
                       <?php echo $_SESSION['user']['name']; ?>
+                      <img src="<?php if(isset($_SESSION['user']['pactuer'])){ echo $_SESSION['user']['pactuer'];}?>" style="width:40px ;height:40px;border-radius:30px" >
                     </a>
                   </li>
                     
-                      <a  href="logout.php" class="btn btn-dark" name="submit" >logOut</a></i></a>
+                      <a  href="logout.php" class="btn btn-dark" name="submit"  onclick="return confirm('Are you sure to sign out ?')">logOut</a></i></a>
 
                   </li>
                  <?php }?>
@@ -139,11 +140,13 @@ $search_email=$search['email'] ;
 ?>
 
 
-<a href='edit.php' class='btn btn-danger'> EDIT </a>
+<a href='edit.php' class='btn btn-success'> EDIT </a>
 </div>   
 
 
+<a href="del.php" class="btn btn-outline-danger" onclick="return confirm('Are you sure to delete the e-mail?');">DELETE ACCOUNT</a>
 <footer>
+  
           <div class="container-fluid bg-dark mt-5 text-light">
             <div class="footer-menue">
               <ul>
@@ -175,6 +178,9 @@ $search_email=$search['email'] ;
           </div>
          </footer>
           
-
+         <script src="./assest/js/sinUp.js"></script>
+         <script src="./assest/js/login.js"></script>
+    <script src="./assest/js/cdn.jsdelivr.net_npm_bootstrap@5.2.3_dist_js_bootstrap.bundle.min.js"></script>
+    <script src="./assest/js/script.js"></script>
 </body>
 </html>
