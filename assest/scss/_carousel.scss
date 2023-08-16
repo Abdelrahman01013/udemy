@@ -1,0 +1,99 @@
+
+
+.header-carousel-button{
+     background-color: #111;
+     width: 35px;
+     height: 35px;
+     padding: 5p;
+     border-radius: 50%;
+     position: absolute;
+     top: 50%;
+}
+
+
+
+
+.tab-pane {
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-top: 0 ;
+    padding: 1.4px;
+    margin-bottom: 200px;
+  }
+
+.cource-card{
+  padding: 10px;
+  margin: 10px;
+}
+
+  .carousel-control-prev {
+    margin-left: 20px;
+  }
+
+
+  .carousel-control-next{
+    margin-right: 20px;
+  }
+
+  .carousel-control-prev-icon, .carousel-control-next-icon{
+    background-size: cover;
+  }
+
+  .header-bannar{
+    position: absolute;
+    top: 60px;
+    left: 60px;
+    background-color: #fff;
+    padding: 20px;
+    display: block;
+    max-width: 400px;
+  }
+
+  .cource-card{
+    margin-top: 20px;
+  }
+  .cource-img{
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    & >img{
+      width: 100%;
+    }
+  }
+
+
+
+.carousel-inner .carousel-item{
+    margin-top: 50px;
+
+
+   &-end.active,
+   &-next{
+        transform: translateX(25%);
+   }
+
+   
+   &-start.active,
+   &-prev{
+        transform: translateX(-25%);
+   }
+
+
+    &.active,
+    &-next,
+    &-prev,
+    &-end{
+      display: flex;
+    }
+
+    &-end,
+    &-start{
+      transform: translateX(0);
+    }
+}
+
+
+
+
+
+
+
+
+

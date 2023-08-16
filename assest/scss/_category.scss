@@ -1,0 +1,26 @@
+
+.categories{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+   
+
+&.category{
+    display: grid;
+    place-content: center;
+    flex: 1;
+     
+}
+}
+.category-text{
+    font-weight: 700;
+ }
+.category-img img{
+    width: 200px;
+}
+.category-img img:hover{
+   transform: scale(1.05);
+}
+.category-img img{
+    transition: transform 150ms ease-in;
+ } 

@@ -1,0 +1,206 @@
+form.flex-auto {
+  flex: auto;
+}
+
+section {
+  margin: 20px auto;
+  max-width: 80%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  width: 1000px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  color: inherit;
+}
+
+.dropdown:hover .dropdown-menue {
+  display: block;
+}
+
+.header-carousel-button {
+  background-color: #111;
+  width: 35px;
+  height: 35px;
+  padding: 5p;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+}
+
+.tab-pane {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-top: 0;
+  padding: 1.4px;
+  margin-bottom: 200px;
+}
+
+.cource-card {
+  padding: 10px;
+  margin: 10px;
+}
+
+.carousel-control-prev {
+  margin-left: 20px;
+}
+
+.carousel-control-next {
+  margin-right: 20px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-size: cover;
+}
+
+.header-bannar {
+  position: absolute;
+  top: 60px;
+  left: 60px;
+  background-color: #fff;
+  padding: 20px;
+  display: block;
+  max-width: 400px;
+}
+
+.cource-card {
+  margin-top: 20px;
+}
+
+.cource-img {
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+.cource-img > img {
+  width: 100%;
+}
+
+.carousel-inner .carousel-item {
+  margin-top: 50px;
+}
+.carousel-inner .carousel-item-end.active, .carousel-inner .carousel-item-next {
+  transform: translateX(25%);
+}
+.carousel-inner .carousel-item-start.active, .carousel-inner .carousel-item-prev {
+  transform: translateX(-25%);
+}
+.carousel-inner .carousel-item.active, .carousel-inner .carousel-item-next, .carousel-inner .carousel-item-prev, .carousel-inner .carousel-item-end {
+  display: flex;
+}
+.carousel-inner .carousel-item-end, .carousel-inner .carousel-item-start {
+  transform: translateX(0);
+}
+
+.tab-pan-content {
+  border-bottom: 0;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.cource-price-discount {
+  font-weight: 400;
+  font-size: medium;
+  text-decoration: line-through;
+  color: #777;
+}
+
+.cource-rating {
+  font-size: 18px;
+}
+
+.cource-rating-stars {
+  color: rgb(237, 110, 110);
+}
+
+.cource-price {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.ource-title, .cource-teacher, .cource-rating, .cource-price, .cource-rating-total {
+  display: block;
+}
+
+.skills {
+  display: flex;
+}
+.skills-icon {
+  background-color: lightgrey;
+  border-radius: 50%;
+  width: 40px;
+  height: 35px;
+  display: grid;
+  place-content: center;
+  margin-right: 10px;
+}
+.skills i {
+  padding: 10px;
+}
+.skills-desc {
+  font-weight: 500;
+  display: grid;
+  place-content: center;
+}
+
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.categories.category {
+  display: grid;
+  place-content: center;
+  flex: 1;
+}
+
+.category-text {
+  font-weight: 700;
+}
+
+.category-img img {
+  width: 200px;
+}
+
+.category-img img:hover {
+  transform: scale(1.05);
+}
+
+.category-img img {
+  transition: transform 150ms ease-in;
+}
+
+.footer-menue {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  padding: 30px 10px;
+}
+.footer-menue ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.footer-logo img {
+  width: 60px;
+}
+
+.sub-footer {
+  padding: 20px;
+}/*# sourceMappingURL=style.css.map */
+
+#user-nav{
+  display: none;
+}
+#logOut-nav{
+  display: none;
+}

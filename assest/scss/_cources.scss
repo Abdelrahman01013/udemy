@@ -1,0 +1,26 @@
+
+.tab-pan-content{
+    border-bottom: 0;
+    padding: 10px;
+    margin: 0 20px;
+}
+
+.cource-price-discount{
+    font-weight: 400;
+    font-size: medium;
+    text-decoration: line-through;
+    color: #777;
+}
+.cource-rating{
+    font-size: 18px;
+}
+.cource-rating-stars{
+    color: rgb(237, 110, 110);
+}
+.cource-price{
+    font-weight: bold;
+    font-size: 20px;
+}
+.ource-title , .cource-teacher , .cource-rating , .cource-price , .cource-rating-total{
+    display: block;
+}
